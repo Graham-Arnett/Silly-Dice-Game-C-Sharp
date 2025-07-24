@@ -19,6 +19,11 @@
                     {
                         Console.WriteLine("You have lost.");
                     }
+                    else
+                    {
+                        Console.Write("\n\nWould you like to draw again? (y/n): ");
+
+                    }
                 }
                 Console.Write("\n\nWould you like to go again? (y/n): ");
                 redo = Console.ReadKey().KeyChar;
