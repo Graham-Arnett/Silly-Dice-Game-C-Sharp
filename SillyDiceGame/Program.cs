@@ -10,13 +10,15 @@
             Random random = new Random();
             do
             {
-                int score = 0;
+                //int score = 0;
                 for(int i = 0;i < 2; i++)
                 {
+                    int score = 0;
                     do
                     {
                         int roll = random.Next(1, 7);
                         score += roll;
+                        Console.WriteLine($"Your roll is: {roll}, and your total score is: {score}");
                         if (score > 21)
                         {
                             Console.WriteLine("You have lost.");
