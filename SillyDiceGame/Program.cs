@@ -10,6 +10,7 @@
             Random random = new Random();
             do
             {
+                bool gameEnd = false;
                 int score = 0;
                 for(int i = 0;i < 2; i++)
                 {
