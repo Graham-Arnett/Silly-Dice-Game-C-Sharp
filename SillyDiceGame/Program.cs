@@ -23,6 +23,7 @@
                         if (score > 21)
                         {
                             Console.WriteLine("You have lost.");
+                            gameEnd = true;
                         }
                         else
                         {
@@ -30,6 +31,11 @@
                             //redo = Console.ReadKey().KeyChar;
                         }
                         redo = Console.ReadKey().KeyChar;
+                        if (redo == 'y')
+                        {
+                            Console.WriteLine("Thanks for playing!");
+                            gameEnd = true;
+                        }
                     } while (redo == 'y'|| redo == 'Y');
                     score = 0;
                 }
