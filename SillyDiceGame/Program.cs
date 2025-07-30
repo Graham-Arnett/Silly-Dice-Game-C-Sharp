@@ -19,10 +19,10 @@
                     {
                         int roll = random.Next(1, 7);
                         score += roll;
-                        Console.WriteLine($"Your roll is: {roll}, and your total score is: {score}");
+                        Console.WriteLine($"\nYour roll is: {roll}, and your total score is: {score}");
                         if (score > 21)
                         {
-                            Console.WriteLine("You have lost.");
+                            Console.WriteLine("\n\nYou have lost.");
                             gameEnd = true;
                         }
                         else
@@ -33,7 +33,7 @@
                         redo = Console.ReadKey().KeyChar;
                         if (redo == 'y')
                         {
-                            Console.WriteLine("Thanks for playing!");
+                            //Console.WriteLine("\n\nThanks for playing!");
                             gameEnd = true;
                         }
                     } while (redo == 'y'|| redo == 'Y');
