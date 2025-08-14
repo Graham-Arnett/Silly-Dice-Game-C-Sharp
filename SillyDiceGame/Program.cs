@@ -25,6 +25,11 @@
                             Console.WriteLine("\n\nYou have lost.");
                             gameEnd = true;
                         }
+                        else if (score == 21)
+                        {
+                            Console.WriteLine("You win!");
+                            gameEnd = true;
+                        }
                         else
                         {
                             Console.Write("\n\nWould you like to draw again? (y/n): ");
