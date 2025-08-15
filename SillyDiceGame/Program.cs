@@ -36,12 +36,12 @@
                             //redo = Console.ReadKey().KeyChar;
                         }
                         redo = Console.ReadKey().KeyChar;
-                        if (redo == 'y')
-                        {
-                            //Console.WriteLine("\n\nThanks for playing!");
-                            gameEnd = true;
-                        }
-                    } while (redo == 'y'|| redo == 'Y');
+                        //if (redo == 'y')
+                        //{
+                        //    //Console.WriteLine("\n\nThanks for playing!");
+                        //    gameEnd = true;
+                        //}
+                    } while (redo == 'y'|| redo == 'Y' && gameEnd == false);
                     score = 0;
                 }
                 Console.Write("\n\nWould you like to go again? (y/n): ");
