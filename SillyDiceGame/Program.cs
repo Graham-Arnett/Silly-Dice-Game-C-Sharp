@@ -41,7 +41,7 @@
                         //    //Console.WriteLine("\n\nThanks for playing!");
                         //    gameEnd = true;
                         //}
-                    } while (redo == 'y'|| redo == 'Y' && gameEnd == false);
+                    } while (redo == 'y'|| redo == 'Y' || gameEnd == false);
                     score = 0;
                 }
                 Console.Write("\n\nWould you like to go again? (y/n): ");
